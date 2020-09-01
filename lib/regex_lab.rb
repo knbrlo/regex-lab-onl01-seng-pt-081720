@@ -30,6 +30,22 @@ end
 
 def valid_phone_number?(phone)
   puts phone
+
+  edited_phone_number = ""
+
+  # does the phone number include hyphens?
+  if phone.to_s.include?('-')
+
+    # remove hypens
+    edited_phone_number = phone.to_s.gsub("-", "")
+
+    puts edited_phone_number
+
+    
+  end
+
+    
+  
   all_valid = false
   phone.each do |number|
     number_removed_hypens = number.to_s.gsub("-", "")
