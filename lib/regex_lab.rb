@@ -9,7 +9,7 @@ end
 def words_five_letters_long(text)
   array_text = text.split(" ")
   puts "========================"
-  final_array = array_text.grep(/^\w{5}/)
+  final_array = array_text.grep(/^\w{5}\s/)
   puts final_array
   #puts text.scan(/\w{5}/)
 #  text.scan(/\w{5}/)
