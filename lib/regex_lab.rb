@@ -41,11 +41,11 @@ def valid_phone_number?(phone)
 
     puts edited_phone_number
 
-    
+
   end
 
-    
-  
+
+
   all_valid = false
   phone.each do |number|
     number_removed_hypens = number.to_s.gsub("-", "")
