@@ -6,6 +6,8 @@ def starts_with_a_vowel?(word)
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
+  # make an array from the passed in text
+  array_text = text.split(" ")
   text.match? /(un)[a-z](ing)/i
 end
 
