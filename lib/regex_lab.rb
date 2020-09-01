@@ -1,4 +1,7 @@
 def starts_with_a_vowel?(word)
+  # \A match the beginning of the string
+  # [aeiou] look for any occourances of these chars
+  # /i case insensitive.
   word.match? /\A[aeiou]/i
 end
 
